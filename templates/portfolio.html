@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Irfan - Django Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Mohd Irfan</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to My Website</h1> <p>I'm a passionate fresher in web development, eager to learn and contribute to innovative projects. I have a strong foundation in HTML, CSS, and JavaScript, and I'm excited to embark on this journey of creating exceptional digital experiences.</p>
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'images/Profile.jpg' %}" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+<section class="about"  id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>"As a second-year undergraduate student in BSc IT, I'm really passionate about technology, especially web development. I'm currently diving into HTML, CSS, and JavaScript, eager to bring my ideas to life through coding. With every project I take on, I'm not just learning new skills but also discovering my creativity and problem-solving abilities. Beyond my studies, I'm actively involved in the web development community, always seeking new opportunities to learn and collaborate with others. Though I'm just starting out, I see every challenge as a chance to grow and improve. My goal is to become a skilled and innovative web developer, and I'm excited for the journey ahead."</p>
+</section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="card">
+                <img src="{% static 'images/Coffee.jpg' %}" alt="Landing Page">
+                <h3>Landing Page</h3>
+                <p>"An engaging landing page developed with HTML, CSS, and JavaScript."</p>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/Calculator.jpg' %}" alt="Calculator">
+                <h3>Calculator</h3>
+                <p>"A responsive calculator built with HTML, CSS, and JavaScript for mathematical operations."</p>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/Temperature.jpg' %}" alt="Temperature Converter">
+                <h3>Temperature Converter</h3>
+                <p>"A user-friendly temperature converter leveraging HTML, CSS, and JavaScript.</p>
+              </div>       
+        </div>
+    </section>
+<section class="skills" id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar" style="width: 95%;">95%</div>
+        </div>
+        <div >
+            <h3>CSS</h3>
+            <div class="progress-bar" style="width: 85%;">85%</div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar" style="width: 70%;">70%</div>
+        </div>
+        <div class="skill">
+            <h3>PHP</h3>
+            <div class="progress-bar" style="width: 75%;">75%</div>
+        </div>
+        <div class="skill">
+            <h3>MySQL</h3>
+            <div class="progress-bar" style="width: 80%;">80%</div>
+        </div>
+    </div>
+</section>
+<section class="education" id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Bachelor of Information Technology</h3>
+            <p>Mumbai University, 2023-2026</p>
+        </div>
+        <div class="download-cv">
+            <h2>Download CV</h2>
+            <a href="path/to/your/cv.pdf" class="btn">Download</a>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="contact-form">
+            {% csrf_token %}
+            <div class="group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="social-icons">
+            <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Mohd Irfan. All rights reserved.</p>
+        
+    </div>
+</footer>
+
+</body>
+</html>
